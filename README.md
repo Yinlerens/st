@@ -154,6 +154,8 @@ graph TB
 |---------|---------|---------|
 | 桌面框架 | Electron | 前端技术栈友好，生态成熟，Windows 平台支持完善 |
 | UI 框架 | React 18 | 组件化开发，生态丰富，社区活跃 |
+| 包管理器 | pnpm | 快速、节省磁盘空间、严格的依赖管理 |
+| 构建工具 | Vite | 快速的开发服务器、优化的生产构建 |
 | 状态管理 | Zustand | 轻量级状态管理库，API 简洁，适合中小型应用 |
 | 代码编辑器 | Monaco Editor | VS Code 同款编辑器，功能强大 |
 | 样式方案 | Tailwind CSS + 组件库（Ant Design） | 快速开发，样式一致性好，Windows 风格适配 |
@@ -415,8 +417,8 @@ graph TB
 - async/await
 
 **前端工程化**:
-- 包管理器（npm/yarn/pnpm）
-- 模块打包工具（Webpack/Vite）
+- 包管理器（pnpm - 项目统一使用）
+- 模块打包工具（Vite - 项目统一使用）
 - 代码规范和 Lint 工具（ESLint/Prettier）
 - 版本控制（Git）
 - 构建和部署流程
@@ -729,7 +731,7 @@ graph TB
 ### 开发阶段划分
 
 **第一阶段 - 核心框架搭建**:
-- 搭建 Electron + React 18 项目基础架构
+- 初始化 pnpm 项目并配置 Electron + Vite + React 18 基础架构
 - 实现主进程和渲染进程通信机制
 - 完成主界面布局和 React Router 路由框架
 - 集成 Zustand 状态管理
@@ -834,7 +836,7 @@ graph TB
 ### 开发阶段划分
 
 **第一阶段 - 核心框架搭建**:
-- 搭建 Electron + React 18 项目基础架构
+- 初始化 pnpm 项目并配置 Electron + Vite + React 18 基础架构
 - 实现主进程和渲染进程通信机制
 - 完成主界面布局和 React Router 路由框架
 - 集成 Zustand 状态管理
