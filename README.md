@@ -1,4 +1,169 @@
-# 前端学习路线桌面应用设计文档
+# 前端学习路线桌面应用
+
+## 项目简介
+
+这是一个基于 Electron 的前端学习路线桌面应用,为前端学习者提供系统化的学习路径、知识点讲解和实战练习。
+
+## ✨ 核心特性
+
+- 🎯 **系统化学习路径**: 从零基础到高级工程师的完整学习路线
+- 📚 **丰富的课程内容**: Markdown 格式讲解,代码语法高亮
+- 💻 **实战练习**: 在线代码编辑器,即时预览运行结果
+- 📊 **进度追踪**: 学习进度可视化,成就徽章系统
+- 🌓 **主题切换**: 支持浅色/深色模式
+- 💾 **数据管理**: 学习数据导入导出,云端同步
+- 🚀 **本地运行**: 无需联网,专注学习
+
+## 🛠️ 技术栈
+
+- **桌面框架**: Electron 28.x
+- **前端框架**: React 18.2
+- **构建工具**: Vite 5.x
+- **开发语言**: TypeScript 5.x
+- **状态管理**: Zustand 4.x
+- **UI 组件库**: Ant Design 5.x
+- **样式方案**: Tailwind CSS 3.x
+- **代码编辑器**: Monaco Editor
+- **Markdown 渲染**: react-markdown + react-syntax-highlighter
+
+## 📦 快速开始
+
+### 环境要求
+
+- Node.js >= 16.x
+- pnpm (推荐) 或 npm
+
+### 安装依赖
+
+```bash
+# 克隆项目
+git clone <repository-url>
+cd st
+
+# 安装依赖
+pnpm install
+# 或
+npm install
+```
+
+### 开发模式
+
+```bash
+# 启动开发服务器
+pnpm run dev
+
+# 启动 Electron 应用
+pnpm run electron:dev
+```
+
+### 构建打包
+
+```bash
+# 构建 Windows 安装包
+pnpm run build:win
+
+# 构建输出位于 release/ 目录
+```
+
+## 📖 文档
+
+- [安装指南](./INSTALL.md) - 详细的安装和运行说明
+- [使用手册](./USER_GUIDE.md) - 完整的功能使用指南
+- [设计文档](./DESIGN.md) - 原始设计文档(见文档末尾)
+
+## 🎓 学习路线
+
+### 基础入门
+- HTML 基础
+- CSS 基础
+- JavaScript 基础
+
+### 进阶提升  
+- ES6+ 现代 JavaScript
+- 前端工程化
+- React 框架基础
+
+### 高级深化
+- React 进阶核心
+- 状态管理
+- TypeScript + React
+
+### 实际业务场景
+- Canvas 数据可视化
+- 微前端架构
+- 复杂表单和文件处理
+
+## 🗂️ 项目结构
+
+```
+st/
+├── electron/              # Electron 主进程
+│   ├── main.ts           # 主进程入口
+│   └── preload.ts        # 预加载脚本
+├── src/                  # React 应用源码
+│   ├── components/       # 组件
+│   ├── data/             # 数据文件
+│   ├── pages/            # 页面组件
+│   ├── store/            # 状态管理
+│   ├── types/            # 类型定义
+│   └── App.tsx           # 应用入口
+├── public/               # 静态资源
+├── package.json          # 项目配置
+├── vite.config.ts        # Vite 配置
+└── tsconfig.json         # TypeScript 配置
+```
+
+## 🎯 开发进度
+
+### 已完成
+
+- ✅ 项目基础架构搭建
+- ✅ Electron + React + Vite 集成
+- ✅ 主界面布局和路由
+- ✅ Zustand 状态管理
+- ✅ Tailwind CSS 样式系统
+- ✅ 学习路线图可视化
+- ✅ 课程内容展示
+- ✅ Markdown 内容渲染
+- ✅ 代码语法高亮
+- ✅ 学习进度追踪
+- ✅ 主题切换功能
+- ✅ 数据导入导出
+
+### 开发中
+
+- ⏳ Monaco Editor 代码编辑器集成
+- ⏳ 在线代码编辑器练习功能
+- ⏳ 代码实时预览机制
+- ⏳ 挑战题测试验证
+- ⏳ 补充更多课程内容
+
+### 计划中
+
+- 📋 完善练习题库
+- 📋 项目实战案例
+- 📋 学习数据可视化图表
+- 📋 成就系统完善
+- 📋 应用性能优化
+
+## 🤝 贡献指南
+
+欢迎提交 Issue 和 Pull Request!
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+## 📝 许可证
+
+MIT License
+
+---
+
+## 附录:原始设计文档
+
 
 ## 项目概述
 
